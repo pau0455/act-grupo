@@ -63,10 +63,10 @@
     width: 12px;
     height: 150px;
     transform-origin: top;
-    transform: rotate(30deg);
+    transform: rotate(20deg);
     animation-name: j-pata;
     animation-duration: 0.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 31;
     animation-direction: alternate;
 }
 
@@ -81,10 +81,10 @@
     width: 12px;
     height: 150px;
     transform-origin: top;
-    transform: rotate(-30deg);
+    transform: rotate(-20deg);
     animation-name: j-pata;
     animation-duration: 0.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 31;
     animation-direction: alternate-reverse;
 }
 
@@ -103,7 +103,7 @@
     transform: rotate(20deg);
     animation-name: j-brazo;
     animation-duration: 0.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 31;
     animation-direction: alternate;
 
 }
@@ -122,7 +122,7 @@
     transform: rotate(-20deg);
     animation-name: j-brazo;
     animation-duration: 0.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 31;
     animation-direction: alternate-reverse;
 }
 
@@ -407,21 +407,21 @@
     z-index: 101;
 }
 
-#joel .ventana {
+#ventana {
     background-color: rgb(24, 255, 255);
     border: 10px solid rgb(116, 65, 0);
     width: 250px;
     height: 250px;
     position: absolute;
     margin: auto;
-    top: 75px;
-    bottom: 0;
-    left: 10px;
-    right: 1;
+    top: 0;
+    bottom: 20px;
+    left: 245px;
+    right: 0;
     z-index: -1000000;
 }
 
-#joel .ventana .palitroque {
+#ventana .palitroque {
     background-color: rgb(116, 65, 0);
     width: 10px;
     height: 250px;
@@ -434,7 +434,7 @@
     z-index: -999999;
 }
 
-#joel .ventana .palitroque2 {
+#ventana .palitroque2 {
     background-color: rgb(116, 65, 0);
     width: 10px;
     height: 250px;
@@ -458,7 +458,7 @@
     z-index: 110;
     opacity: 0%;
     animation-name: j-regalo-1;
-    animation-duration: 16s;
+    animation-duration: 8.5s;
     animation-delay: 3.5s;
     animation-iteration-count: 1;
     animation-direction: normal;
@@ -520,7 +520,20 @@
     height: 10px;
  }
  
-
+#joel .regalo-2{
+    position: absolute;
+    margin: auto;
+    top: 1;
+    bottom: 100px;
+    left: 50px;
+    right: 0; 
+    z-index: 110;
+    opacity: 100%;
+    animation-name: j-regalo-2;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+} 
 
 
 
@@ -685,7 +698,7 @@
         left: -70px;
     }
 
-    50% {
+    75% {
         left: 0;
         right: -50px;
     }
@@ -704,529 +717,557 @@
 
 }
 
+@keyframes j-regalo-2 {
 
-
-#pau  {
-  
-    border-bottom: 100px solid #b0a086;
-    position: absolute;
-    margin: auto 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 960px;
-    width: 912px;
- }
- 
- 
- #pau .moñeco {
-    position: absolute;
-    margin: auto;
-    top: 1;
-    bottom: -20px;
-    left: 0;
-    right: 0;
-    width: 250px;
-    height: 400px;
-    animation-name: p-caminar;
-    animation-iteration-count: infinite;
-    animation-duration: 16s;
-    animation-direction: alternate;
- }
- 
- 
- #pau .cabesa {
-    border: 10px solid blue;
-    position: absolute;
-    margin: auto;
-    border-radius: 50%;
-    top: 0;
-    bottom: 1;
-    left: 0;
-    right: 0;
-    width: 115px;
-    height: 115px
- }
- 
- 
- #pau .torso {
-    background-color: blue;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 25px;
-    left: 0;
-    right: 0;
-    width: 12px;
-    height: 150px;
- }
- 
- 
- #pau .pata1 {
-    background-color: blue;
-    position: absolute;
-    margin: auto;
-    top: 250px;
-    bottom: 0;
-    left: 0;
-    right: 0px;
-    width: 12px;
-    height: 150px;
-    transform-origin: top;
-    transform: rotate(30deg);
-    animation-name: p-patas;
-    animation-iteration-count: infinite;
-    animation-duration: 0.5s;
-    animation-direction: alternate;
- }
- 
- 
- #pau .pata2 {
-    background-color: blue;
-    position: absolute;
-    margin: auto;
-    top: 250px;
-    bottom: 0;
-    left: 0px;
-    right: 0;
-    width: 12px;
-    height: 150px;
-    transform-origin: top;
-    transform: rotate(-30deg);
-    animation-name: p-patas;
-    animation-iteration-count: infinite;
-    animation-duration: 0.5s;
-    animation-direction: alternate-reverse;
- }
- 
- 
- #pau .brazo1 {
-    background-color: blue;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 25px;
-    left: 0;
-    right: 0;
-    width: 12px;
-    height: 150px;
-    transform-origin: top;
-    transform: rotate(-30deg);
-    animation-name: p-brazo;
-    animation-iteration-count: infinite;
-    animation-duration: 0.5s;
-    animation-direction: alternate;
- }
- 
- 
- #pau .brazo2 {
-    background-color: blue;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 25px;
-    left: 0;
-    right: 0;
-    width: 12px;
-    height: 150px;
-    transform-origin: top;
-    transform: rotate(30deg);
-    animation-name: p-brazo;
-    animation-iteration-count: infinite;
-    animation-duration: 0.5s;
-    animation-direction: alternate-reverse;
- }
- 
- 
- #pau .regalo{
-    position:absolute;
-    margin: auto;
-    top: 1;
-    bottom: 0;
-    left: 0;
-    right: 0; 
-    opacity: 0%;
-    animation-name: p-magia;
-    animation-iteration-count: 1;
-    animation-duration: 3.5s;
-    animation-delay: 0s;
- }
- 
- 
- #pau .caja {
-    background-color: #32d429;
-    position: absolute;
-    margin: auto;
-    border: 2px solid black;
-    top: 50px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
- }
- 
- 
- #pau .cinta1 {
-    background-color: gold;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 12px;
-    height: 93px;
- }
- 
- 
- #pau .cinta2 {
-    background-color: gold;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 12px;
-    height: 93px;
-    transform: rotate(90deg);
- }
- 
- 
- #pau .tortilla {
-    border: 2px solid black;
-    background-color: gold;
-    z-index: -100;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 50px;
-    left: 35px;
-    right: 0;
-    width: 30px;
-    height: 10px;
- }
- 
- 
- #pau .puerta {
-    background-color: brown;
-    border: 2px solid black;
-    position: absolute;
-    margin: auto;
-    top: 1;
-    bottom: 0;
-    left: 0;
-    right: 1;
-    width: 12px;
-    height: 500px;
- }
- 
- 
- #pau .pomo {
-    border: 2px solid black;
-    position: absolute;
-    margin: auto;
-    background-color: gold;
-    border-radius: 50%;
-    top: 400px;
-    bottom: 0;
-    left: 0;
-    right: 1;
-    width: 20px;
-    height: 20px;
- }
- 
- 
- #pau .caja-nieve {
-    position: absolute;
-    margin: auto;
-    top: 1;
-    bottom: 100px;
-    left: 0;
-    right: 400px;
-    opacity: 100%;
- 
- 
- }
- 
- 
- #pau .caja-nieve-brazo {
-    position: absolute;
-    margin: auto;
-    top: 1;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0%;
- 
- 
- }
- 
- 
- 
- 
- #pau .summon-nieve {
-    border: 3px solid black;
-    background-color: grey;
-    position: absolute;
-    margin: auto;
-    top: 50px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 60px;
-    height: 100px;
- }
- 
- 
- #pau .asa {
-    border: 2px solid black;
-    background-color: grey;
-    z-index: -100;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 50px;
-    left: 0;
-    right: 0;
-    width: 10px;
-    height: 30px;
- }
- 
- 
- #pau .boca {
-    border: 2px solid black;
-    position: absolute;
-    margin: auto;
-    z-index: -100;
-    background-color: darkslategray;
-    top: 50px;
-    bottom: 0;
-    left: 60px;
-    right: 0;
-    width: 20px;
-    height: 40px;
- }
- 
- 
- @keyframes invisibre {
-    0% {opacity: 0%;}
-    0.00000000000000000000000000000001% {opacity: 100%;}
-    100% {opacity: 100%;}
- }
- 
- 
- @keyframes invisibre-reves {
-    0% {opacity: 100%;}
-    0.00000000000000000000000000000001% {opacity: 0%;}
-    100% {opacity: 0%;}
- }
- 
- 
- @keyframes p-brazo {
- 
- 
- 
- 
- 
- 
- 
- 
     0% {
-       transform: rotate(20deg);
+        opacity: 0%;
     }
-   
-   
-    6.25% {
-       transform: rotate(17.5deg);
-    }
-   
-   
-    12.5% {
-       transform: rotate(15deg);
-    }
-   
-   
-    18.75% {
-       transform: rotate(12.5deg);
-    }
-   
-   
-    25% {
-       transform: rotate(10deg);
-   
-   
-    }
-   
-   
-    31.25% {
-       transform: rotate(7.5deg);
-    }
-   
-   
-    37.5% {
-       transform: rotate(5deg);
-    }
-   
-   
-    43.75% {
-       transform: rotate(2.5deg);
-    }
-   
-   
-    50% {
-       transform: rotate(0deg);
-    }
-   
-   
-    56.25% {
-       transform: rotate(-2.5deg);
-    }
-   
-   
-    62.5% {
-   
-   
-       transform: rotate(-5deg);
-    }
-   
-   
-    68.75% {
-       transform: rotate(-7.5deg);
-    }
-   
-   
-    75% {
-       transform: rotate(-10deg);
-   
-   
-    }
-   
-   
-    81.25% {
-       transform: rotate(-12.5deg);
-    }
-   
-   
-    82.5% {
-       transform: rotate(-15deg);
-    }
-   
-   
-    88.75% {
-       transform: rotate(-17.5deg);
-    }
-   
-   
+    
     100% {
-       transform: rotate(-20deg);
+        opacity: 0%;
     }
+    
     }
-   
- 
- 
-    @keyframes p-patas {
- 
- 
- 
- 
- 
- 
- 
- 
-        0% {
-            transform: rotate(30deg);
-        }
-      
-        6.25% {
-            transform: rotate(25.75deg);
-        }
-      
-        12.5% {
-            transform: rotate(22.5deg);
-        }
-      
-        18.75% {
-            transform: rotate(18.25deg);
-        }
-      
-        25% {
-            transform: rotate(15deg);
-      
-        }
-      
-        31.25% {
-            transform: rotate(10.75deg);
-        }
-      
-        37.5% {
-            transform: rotate(7.5deg);
-        }
-      
-        43.75% {
-            transform: rotate(3.25deg);
-        }
-      
-        50% {
-            transform: rotate(0deg);
-        }
-      
-        56.25% {
-            transform: rotate(-3.25deg);
-        }
-      
-        62.5% {
-      
-            transform: rotate(-7.5deg);
-        }
-      
-        68.75% {
-            transform: rotate(-10.75deg);
-        }
-      
-        75% {
-            transform: rotate(-15deg);
-      
-        }
-      
-        81.25% {
-            transform: rotate(-18.25deg);
-        }
-      
-        82.5% {
-            transform: rotate(-22.5deg);
-        }
-      
-        88.75% {
-            transform: rotate(-25.75deg);
-        }
-      
-        100% {
-            transform: rotate(-30deg);
-        }
-        }    
- 
- 
- @keyframes p-caminar {
-    0% {
+
+
+    #pau  {
+  
+        border-bottom: 100px solid #b0a086;
+        position: absolute;
+        margin: auto 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 960px;
+        width: 912px;
+     }
+     
+     
+     #pau .moñeco {
+        position: absolute;
+        margin: auto;
+        top: 1;
+        bottom: -20px;
+        left: -1300px;
+        right: 0;
+        width: 250px;
+        height: 400px;
+        animation-name: p-caminar;
+        animation-iteration-count: 1;
+        animation-duration: 16s;
+        animation-direction: alternate;
+     }
+     
+     
+     #pau .cabesa {
+        border: 10px solid blue;
+        position: absolute;
+        margin: auto;
+        border-radius: 50%;
+        top: 0;
+        bottom: 1;
+        left: 0;
+        right: 0;
+        width: 115px;
+        height: 115px
+     }
+     
+     
+     #pau .torso {
+        background-color: blue;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        width: 12px;
+        height: 150px;
+     }
+     
+     
+     #pau .pata1 {
+        background-color: blue;
+        position: absolute;
+        margin: auto;
+        top: 250px;
+        bottom: 0;
+        left: 0;
+        right: 0px;
+        width: 12px;
+        height: 150px;
+        transform-origin: top;
+        transform: rotate(30deg);
+        animation-name: p-patas;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-direction: alternate;
+     }
+     
+     
+     #pau .pata2 {
+        background-color: blue;
+        position: absolute;
+        margin: auto;
+        top: 250px;
+        bottom: 0;
         left: 0px;
-    }
-    25%{
-        left: 700px;
-    }
- }
- 
- 
- @keyframes p-magia {
-    0%{
-        opacity: 100%;
-    }
- 
- 
-    100%{
-        opacity: 100%;
-    }
- }
- 
+        right: 0;
+        width: 12px;
+        height: 150px;
+        transform-origin: top;
+        transform: rotate(-30deg);
+        animation-name: p-patas;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-direction: alternate-reverse;
+     }
+     
+     
+     #pau .brazo1 {
+        background-color: blue;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        width: 12px;
+        height: 150px;
+        transform-origin: top;
+        transform: rotate(-30deg);
+        animation-name: p-brazo;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-direction: alternate;
+     }
+     
+     
+     #pau .brazo2 {
+        background-color: blue;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        width: 12px;
+        height: 150px;
+        transform-origin: top;
+        transform: rotate(30deg);
+        animation-name: p-brazo;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-direction: alternate-reverse;
+     }
+     
+     
+     #pau .regalo{
+        position:absolute;
+        margin: auto;
+        top: 1;
+        bottom: 0;
+        left: 0;
+        right: 0; 
+        opacity: 0%;
+        animation-name: p-magia;
+        animation-iteration-count: 1;
+        animation-duration: 3.5s;
+        animation-delay: 0s;
+     }
+     
+     
+     #pau .caja {
+        background-color: #32d429;
+        position: absolute;
+        margin: auto;
+        border: 2px solid black;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+     }
+     
+     
+     #pau .cinta1 {
+        background-color: gold;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 12px;
+        height: 93px;
+     }
+     
+     
+     #pau .cinta2 {
+        background-color: gold;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 12px;
+        height: 93px;
+        transform: rotate(90deg);
+     }
+     
+     
+     #pau .tortilla {
+        border: 2px solid black;
+        background-color: gold;
+        z-index: -100;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 50px;
+        left: 35px;
+        right: 0;
+        width: 30px;
+        height: 10px;
+     }
+     
+     
+     #pau .puerta {
+        background-color: brown;
+        border: 2px solid black;
+        position: absolute;
+        margin: auto;
+        top: 1;
+        bottom: 0;
+        left: 0;
+        right: 1;
+        width: 12px;
+        height: 500px;
+     }
+     
+     
+     #pau .pomo {
+        border: 2px solid black;
+        position: absolute;
+        margin: auto;
+        background-color: gold;
+        border-radius: 50%;
+        top: 400px;
+        bottom: 0;
+        left: 0;
+        right: 1;
+        width: 20px;
+        height: 20px;
+     }
+     
+     
+     #pau .caja-nieve {
+        position: absolute;
+        margin: auto;
+        top: 1;
+        bottom: 100px;
+        left: 0;
+        right: 400px;
+        opacity: 0%;
+        animation-name: p-magia;
+        animation-iteration-count: 1;
+        animation-duration: 6s;
+        animation-delay: 0s;
+     }
+     
+     
+     #pau .caja-nieve-brazo {
+        position: absolute;
+        margin: auto;
+        top: 1;
+        bottom: 0;
+        left: 0;
+        right: 1;
+        opacity: 0%;
+        animation-name: p-magia;
+        animation-iteration-count: 1;
+        animation-duration: 13s;
+        animation-delay: 6s;
+     }
+     
+     
+     
+     
+     
+     
+     #pau .summon-nieve {
+        border: 3px solid black;
+        background-color: grey;
+        position: absolute;
+        margin: auto;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 60px;
+        height: 100px;
+     }
+     
+     
+     #pau .asa {
+        border: 2px solid black;
+        background-color: grey;
+        z-index: -100;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        width: 10px;
+        height: 30px;
+     }
+     
+     
+     #pau .boca {
+        border: 2px solid black;
+        position: absolute;
+        margin: auto;
+        z-index: -100;
+        background-color: darkslategray;
+        top: 50px;
+        bottom: 0;
+        left: 60px;
+        right: 0;
+        width: 20px;
+        height: 40px;
+     }
+     
+     
+     @keyframes invisibre {
+        0% {opacity: 0%;}
+        0.00000000000000000000000000000001% {opacity: 100%;}
+        100% {opacity: 100%;}
+     }
+     
+     
+     @keyframes invisibre-reves {
+        0% {opacity: 100%;}
+        0.00000000000000000000000000000001% {opacity: 0%;}
+        100% {opacity: 0%;}
+     }
+     
+     
+     @keyframes p-brazo {
+     
+     
+     
+     
+     
+     
+     
+     
+        0% {
+           transform: rotate(20deg);
+        }
+       
+       
+        6.25% {
+           transform: rotate(17.5deg);
+        }
+       
+       
+        12.5% {
+           transform: rotate(15deg);
+        }
+       
+       
+        18.75% {
+           transform: rotate(12.5deg);
+        }
+       
+       
+        25% {
+           transform: rotate(10deg);
+       
+       
+        }
+       
+       
+        31.25% {
+           transform: rotate(7.5deg);
+        }
+       
+       
+        37.5% {
+           transform: rotate(5deg);
+        }
+       
+       
+        43.75% {
+           transform: rotate(2.5deg);
+        }
+       
+       
+        50% {
+           transform: rotate(0deg);
+        }
+       
+       
+        56.25% {
+           transform: rotate(-2.5deg);
+        }
+       
+       
+        62.5% {
+       
+       
+           transform: rotate(-5deg);
+        }
+       
+       
+        68.75% {
+           transform: rotate(-7.5deg);
+        }
+       
+       
+        75% {
+           transform: rotate(-10deg);
+       
+       
+        }
+       
+       
+        81.25% {
+           transform: rotate(-12.5deg);
+        }
+       
+       
+        82.5% {
+           transform: rotate(-15deg);
+        }
+       
+       
+        88.75% {
+           transform: rotate(-17.5deg);
+        }
+       
+       
+        100% {
+           transform: rotate(-20deg);
+        }
+        }
+       
+     
+     
+        @keyframes p-patas {
+     
+     
+     
+     
+     
+     
+     
+     
+            0% {
+                transform: rotate(30deg);
+            }
+          
+            6.25% {
+                transform: rotate(25.75deg);
+            }
+          
+            12.5% {
+                transform: rotate(22.5deg);
+            }
+          
+            18.75% {
+                transform: rotate(18.25deg);
+            }
+          
+            25% {
+                transform: rotate(15deg);
+          
+            }
+          
+            31.25% {
+                transform: rotate(10.75deg);
+            }
+          
+            37.5% {
+                transform: rotate(7.5deg);
+            }
+          
+            43.75% {
+                transform: rotate(3.25deg);
+            }
+          
+            50% {
+                transform: rotate(0deg);
+            }
+          
+            56.25% {
+                transform: rotate(-3.25deg);
+            }
+          
+            62.5% {
+          
+                transform: rotate(-7.5deg);
+            }
+          
+            68.75% {
+                transform: rotate(-10.75deg);
+            }
+          
+            75% {
+                transform: rotate(-15deg);
+          
+            }
+          
+            81.25% {
+                transform: rotate(-18.25deg);
+            }
+          
+            82.5% {
+                transform: rotate(-22.5deg);
+            }
+          
+            88.75% {
+                transform: rotate(-25.75deg);
+            }
+          
+            100% {
+                transform: rotate(-30deg);
+            }
+            }    
+     
+     
+     @keyframes p-caminar {
+        0% {
+            left: 0px;
+        }
+        25%{
+            left: 700px;
+        }
+        40%{
+            left: -300px;
+        }
+        55%{
+            left: -1300px;
+        }
+        100%{
+            left: -1300px;
+        }
+     
+     
+     }
+     
+     
+     @keyframes p-magia {
+        0%{
+            opacity: 100%;
+        }
+     
+     
+        100%{
+            opacity: 100%;
+        }
+     }
+     
