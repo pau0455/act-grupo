@@ -5,10 +5,14 @@
 
 #joel {
     position: absolute;
+    margin: auto 0;
     border-bottom: 100px solid #b0a086;
     height: 960px;
     width: 912px;
     left: 912px;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 
 #joel .dummy {
@@ -413,12 +417,17 @@
     width: 250px;
     height: 250px;
     position: absolute;
-    margin: auto;
+    margin: auto 0;
     top: 0;
     bottom: 20px;
-    left: 245px;
+    left: 920px;
     right: 0;
     z-index: -1000000;
+    animation-name: ventana;
+    animation-duration: 2s;
+    animation-delay: 17s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
 }
 
 #ventana .palitroque {
@@ -535,6 +544,37 @@
     animation-direction: normal;
 } 
 
+#nevada {
+    border: solid 25px rgb(116, 65, 0);
+    position: absolute;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1824px;
+    height: 960px;
+    background-color: aqua;
+    opacity: 0%;
+    z-index: 999999999999999;
+    animation-name: nevada-truco;
+    animation-duration: 5s;
+    animation-delay: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    
+}
+
+
+@keyframes nevada-truco {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
 
 
 @keyframes j-brazo {
@@ -1270,4 +1310,17 @@
             opacity: 100%;
         }
      }
+
+@keyframes ventana {
+    0% {
+        z-index: 9999999;
+    }
+    50% {
+        top: 2000px;
+        bottom: 0;
+        left: 2000px;
+        right: 0;
+        scale: 2000%;
+    }
+}
      
