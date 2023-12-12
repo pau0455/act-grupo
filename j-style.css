@@ -544,6 +544,37 @@
     animation-direction: normal;
 } 
 
+#nevada {
+    border: solid 25px rgb(116, 65, 0);
+    position: absolute;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1824px;
+    height: 960px;
+    background-color: aqua;
+    opacity: 0%;
+    z-index: 999999999999999;
+    animation-name: nevada-truco;
+    animation-duration: 5s;
+    animation-delay: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    
+}
+
+
+@keyframes nevada-truco {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
 
 
 @keyframes j-brazo {
