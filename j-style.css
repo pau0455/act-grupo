@@ -1,0 +1,739 @@
+* {
+    box-sizing: border-box;
+    }
+
+
+#joel {
+    position: absolute;
+    margin: auto 0;
+    border-bottom: 100px solid #b0a086;
+    height: 960px;
+    width: 912px;
+    left: 912px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#joel .dummy {
+    margin: auto;
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    top: 1;
+    bottom: -20px;
+    left: 0;
+    right: 525px;
+    animation-name: j-caminar;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+
+}
+
+#joel .cabeza {
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+    border: 10px solid red;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 1;
+    left: 0;
+    right: 0;
+}
+
+#joel .torso {
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    width: 12px;
+    height: 150px;
+}
+
+#joel .pata-iz {
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    top: 250px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 12px;
+    height: 150px;
+    transform-origin: top;
+    transform: rotate(20deg);
+    animation-name: j-pata;
+    animation-duration: 0.5s;
+    animation-iteration-count: 31;
+    animation-direction: alternate;
+}
+
+#joel .pata-de {
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    top: 250px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 12px;
+    height: 150px;
+    transform-origin: top;
+    transform: rotate(-20deg);
+    animation-name: j-pata;
+    animation-duration: 0.5s;
+    animation-iteration-count: 31;
+    animation-direction: alternate-reverse;
+}
+
+
+#joel .brazo-iz {
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    width: 12px;
+    height: 150px;
+    transform-origin: top;
+    transform: rotate(20deg);
+    animation-name: j-brazo;
+    animation-duration: 0.5s;
+    animation-iteration-count: 31;
+    animation-direction: alternate;
+
+}
+
+#joel .brazo-de {
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    width: 12px;
+    height: 150px;
+    transform-origin: top;
+    transform: rotate(-20deg);
+    animation-name: j-brazo;
+    animation-duration: 0.5s;
+    animation-iteration-count: 31;
+    animation-direction: alternate-reverse;
+}
+
+#joel .arbol {
+    margin: auto;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 1;
+    bottom: 0;
+    left: 1;
+    right: 10px;
+}
+
+#joel .arbol .base {
+    width: 150px;
+    height: 0px;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-top: 100px solid #b73c03;
+    position: absolute;
+    margin: auto;
+    top: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#joel .arbol .oja-1 {
+    width: 0;
+    height: 0;
+    border-right: 175px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 175px solid transparent;
+    border-bottom: 150px solid green;
+    position: absolute;
+    margin: auto;
+    top: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#joel .arbol .oja-2 {
+    width: 0;
+    height: 0;
+    border-right: 150px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 150px solid transparent;
+    border-bottom: 150px solid green;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#joel .arbol .oja-3 {
+    width: 0;
+    height: 0;
+    border-right: 125px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 125px solid transparent;
+    border-bottom: 150px solid green;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#joel .arbol .oja-4 {
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 150px solid green;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#joel .arbol .oja-5 {
+    width: 0;
+    height: 0;
+    border-right: 75px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 75px solid transparent;
+    border-bottom: 150px solid green;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 450px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#joel .arbol .oja-6 {
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 100px solid green;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 600px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#joel .arbol .bola-az-1 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    position: absolute;
+    margin: auto;
+    top: 150px;
+    bottom: 0;
+    left: -50px;
+    right: 0;
+    z-index: 101;
+}
+
+#joel .arbol .bola-az-2 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    position: absolute;
+    margin: auto;
+    top: -100px;
+    bottom: 0;
+    left: -100px;
+    right: 0;
+    z-index: 101;
+}
+
+#joel .arbol .bola-az-3 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    position: absolute;
+    margin: auto;
+    top: -250px;
+    bottom: 0;
+    left: -60px;
+    right: 0;
+    z-index: 101;
+}
+
+
+#joel .arbol .bola-az-4 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: indigo;
+    position: absolute;
+    margin: auto;
+    top: 340px;
+    bottom: 0;
+    left: 175px;
+    right: 0;
+    z-index: 101;
+}
+
+
+#joel .arbol .bola-az-5 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: cornflowerblue;
+    position: absolute;
+    margin: auto;
+    top: 340px;
+    bottom: 0;
+    left: -160px;
+    right: 0;
+    z-index: 101;
+}
+
+
+#joel .arbol .bola-az-6 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: hotpink;
+    position: absolute;
+    margin: auto;
+    top: 60px;
+    bottom: 0;
+    left: 80px;
+    right: 0;
+    z-index: 101;
+}
+
+
+#joel .arbol .bola-az-7 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: khaki;
+    position: absolute;
+    margin: auto;
+    top: 30px;
+    bottom: 0;
+    left: -130px;
+    right: 0;
+    z-index: 101;
+}
+
+
+#joel .arbol .bola-az-8 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: deeppink;
+    position: absolute;
+    margin: auto;
+    top: -100px;
+    bottom: 0;
+    left: 78px;
+    right: 0;
+    z-index: 101;
+}
+
+
+#joel .arbol .bola-az-9 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: papayawhip;
+    position: absolute;
+    margin: auto;
+    top: -340px;
+    bottom: 0;
+    left: 40px;
+    right: 0;
+    z-index: 101;
+}
+
+#joel .arbol .bola-az-10 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    margin: auto;
+    top: 290px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    z-index: 101;
+}
+
+#joel .arbol .bola-az-11 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: firebrick;
+    position: absolute;
+    margin: auto;
+    top: -460px;
+    bottom: 0;
+    left: -20px;
+    right: 0;
+    z-index: 101;
+}
+
+#ventana {
+    background-color: rgb(24, 255, 255);
+    border: 10px solid rgb(116, 65, 0);
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin: auto 0;
+    top: 0;
+    bottom: 20px;
+    left: 920px;
+    right: 0;
+    z-index: -1000000;
+    animation-name: ventana;
+    animation-duration: 2s;
+    animation-delay: 17s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+#ventana .palitroque {
+    background-color: rgb(116, 65, 0);
+    width: 10px;
+    height: 250px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -999999;
+}
+
+#ventana .palitroque2 {
+    background-color: rgb(116, 65, 0);
+    width: 10px;
+    height: 250px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(90deg);
+    z-index: -999999;
+}
+
+#joel .regalo{
+    position: absolute;
+    margin: auto;
+    top: 1;
+    bottom: 0;
+    left: -100px;
+    right: 0; 
+    z-index: 110;
+    opacity: 0%;
+    animation-name: j-regalo-1;
+    animation-duration: 8.5s;
+    animation-delay: 3.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+ }
+ 
+ 
+ #joel .caja {
+    background-color: #32d429;
+    position: absolute;
+    margin: auto;
+    border: 2px solid black;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+ }
+ 
+ 
+ #joel .cinta1 {
+    background-color: gold;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 12px;
+    height: 93px;
+ }
+ 
+ 
+ #joel .cinta2 {
+    background-color: gold;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 12px;
+    height: 93px;
+    transform: rotate(90deg);
+ }
+ 
+ 
+ #joel .tortilla {
+    border: 2px solid black;
+    background-color: gold;
+    z-index: -100;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    width: 30px;
+    height: 10px;
+ }
+ 
+#joel .regalo-2{
+    position: absolute;
+    margin: auto;
+    top: 1;
+    bottom: 100px;
+    left: 50px;
+    right: 0; 
+    z-index: 110;
+    opacity: 100%;
+    animation-name: j-regalo-2;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+} 
+
+
+
+@keyframes j-brazo {
+
+
+0% {
+    transform: rotate(20deg);
+}
+
+6.25% {
+    transform: rotate(17.5deg);
+}
+
+12.5% {
+    transform: rotate(15deg);
+}
+
+18.75% {
+    transform: rotate(12.5deg);
+}
+
+25% {
+    transform: rotate(10deg);
+
+}
+
+31.25% {
+    transform: rotate(7.5deg);
+}
+
+37.5% {
+    transform: rotate(5deg);
+}
+
+43.75% {
+    transform: rotate(2.5deg);
+}
+
+50% {
+    transform: rotate(0deg);
+}
+
+56.25% {
+    transform: rotate(-2.5deg);
+}
+
+62.5% {
+
+    transform: rotate(-5deg);
+}
+
+68.75% {
+    transform: rotate(-7.5deg);
+}
+
+75% {
+    transform: rotate(-10deg);
+
+}
+
+81.25% {
+    transform: rotate(-12.5deg);
+}
+
+82.5% {
+    transform: rotate(-15deg);
+}
+
+88.75% {
+    transform: rotate(-17.5deg);
+}
+
+100% {
+    transform: rotate(-20deg);
+}
+}
+
+@keyframes j-pata {
+
+
+    0% {
+        transform: rotate(30deg);
+    }
+    
+    6.25% {
+        transform: rotate(25.75deg);
+    }
+    
+    12.5% {
+        transform: rotate(22.5deg);
+    }
+    
+    18.75% {
+        transform: rotate(18.25deg);
+    }
+    
+    25% {
+        transform: rotate(15deg);
+    
+    }
+    
+    31.25% {
+        transform: rotate(10.75deg);
+    }
+    
+    37.5% {
+        transform: rotate(7.5deg);
+    }
+    
+    43.75% {
+        transform: rotate(3.25deg);
+    }
+    
+    50% {
+        transform: rotate(0deg);
+    }
+    
+    56.25% {
+        transform: rotate(-3.25deg);
+    }
+    
+    62.5% {
+    
+        transform: rotate(-7.5deg);
+    }
+    
+    68.75% {
+        transform: rotate(-10.75deg);
+    }
+    
+    75% {
+        transform: rotate(-15deg);
+    
+    }
+    
+    81.25% {
+        transform: rotate(-18.25deg);
+    }
+    
+    82.5% {
+        transform: rotate(-22.5deg);
+    }
+    
+    88.75% {
+        transform: rotate(-25.75deg);
+    }
+    
+    100% {
+        transform: rotate(-30deg);
+    }
+    }
+
+@keyframes j-caminar {
+
+    0% {
+        right: 525px;
+    }
+
+    25% {
+        right: 912px;
+        left: -70px;
+    }
+
+    75% {
+        left: 0;
+        right: -50px;
+    }
+    
+}
+
+@keyframes j-regalo-1 {
+
+0% {
+    opacity: 100%;
+}
+
+100% {
+    opacity: 100%;
+}
+
+}
+
+@keyframes j-regalo-2 {
+
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 0%;
+    }
+    
+    }
