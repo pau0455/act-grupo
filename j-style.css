@@ -58,6 +58,60 @@
     border: solid 2px black;
 }
 
+#joel .cara-es {
+    width: 115px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 7;
+    border: solid 2px black;
+    animation-name: j-pelo;
+    animation-duration: 15.5s;
+    animation-iteration-count: 1;
+}
+
+#joel .ojo {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin: auto;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 1;
+    z-index: 6;
+    border-top: solid 2px black;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
+    animation-name: j-mirada;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+}
+
+#joel .pupila {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 1;
+    z-index: 6;
+    animation-name: j-mirada-2;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+}
+
 #joel .pelo {
     width: 111px;
     height: 35px;
@@ -906,3 +960,47 @@
     }
     
     }
+
+@keyframes j-mirada {
+
+    0% {
+        right: 0;
+        left: 86px;
+        border-top: solid 2px black;
+        border-right: transparent;
+        border-bottom: solid 2px black;
+        border-left: solid 2px black;
+    }
+
+    100% {
+        right: 0;
+        left: 86px;
+        border-top: solid 2px black;
+        border-right: transparent;
+        border-bottom: solid 2px black;
+        border-left: solid 2px black;
+    }
+}
+
+@keyframes j-mirada-2 {
+
+    0% {
+        right: 0;
+        left: 18px;
+    }
+
+    100% {
+        right: 0;
+        left: 18px;
+    }
+}
+
+@keyframes j-pelo {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
