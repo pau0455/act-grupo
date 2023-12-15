@@ -29,10 +29,9 @@
 
 
 #pau .cabesa {
-   border: 10px solid blue;
+   background-color: #FBC5A7  ;
    position: absolute;
    margin: auto;
-   border-radius: 50%;
    top: 0;
    bottom: 1;
    left: 0;
@@ -41,29 +40,72 @@
    height: 115px
 }
 
+#pau .pelo {
+   background-color: brown  ;
+   position: absolute;
+   margin: auto;
+   top: 0;
+   bottom: 1;
+   left: 0;
+   right: 0;
+   width: 115px;
+   height: 45px;
+   border-bottom-left-radius: 30%;
+   border-bottom-right-radius: 30%;
+}
+
+#pau .mano {
+   background-color: #FBC5A7  ;
+   position: absolute;
+   margin: auto;
+   z-index: 10;
+   top: 1;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 20px;
+   height: 21px
+}
+
+#pau .pie {
+   background-color: black  ;
+   position: absolute;
+   margin: auto;
+   z-index: 10;
+   top: 1;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 20px;
+   height: 21px
+}
 
 #pau .torso {
-   background-color: blue;
+   background-color: blue  ;
+   border: black solid 2px;
+   z-index: 5;
    position: absolute;
    margin: auto;
    top: 0;
    bottom: 25px;
    left: 0;
    right: 0;
-   width: 12px;
+   width: 50px;
    height: 150px;
 }
 
 
 #pau .pata1 {
-   background-color: blue;
+   background-color: darkgrey   ;
+   border: black solid 2px;
    position: absolute;
+   z-index: 4;
    margin: auto;
    top: 250px;
    bottom: 0;
    left: 0;
    right: 0px;
-   width: 12px;
+   width: 25px;
    height: 150px;
    transform-origin: top;
    transform: rotate(30deg);
@@ -75,14 +117,16 @@
 
 
 #pau .pata2 {
-   background-color: blue;
+   background-color: darkgray  ;
+   border: black solid 2px;
    position: absolute;
    margin: auto;
+   z-index: 3;
    top: 250px;
    bottom: 0;
    left: 0px;
    right: 0;
-   width: 12px;
+   width: 25px;
    height: 150px;
    transform-origin: top;
    transform: rotate(-30deg);
@@ -94,14 +138,16 @@
 
 
 #pau .brazo1 {
-   background-color: blue;
+   background-color: blue  ;
+   border: black solid 2px;
    position: absolute;
    margin: auto;
+   z-index: 3;
    top: 0;
    bottom: 25px;
    left: 0;
    right: 0;
-   width: 12px;
+   width: 25px;
    height: 150px;
    transform-origin: top;
    transform: rotate(-30deg);
@@ -113,14 +159,16 @@
 
 
 #pau .brazo2 {
-   background-color: blue;
+   background-color: blue  ;
    position: absolute;
+   border: black solid 2px;
    margin: auto;
+   z-index: 6;
    top: 0;
    bottom: 25px;
    left: 0;
    right: 0;
-   width: 12px;
+   width: 25px;
    height: 150px;
    transform-origin: top;
    transform: rotate(30deg);
@@ -134,6 +182,7 @@
 #pau .regalo{
    position:absolute;
    margin: auto;
+   z-index: -100;
    top: 1;
    bottom: 0;
    left: 0;
@@ -149,6 +198,7 @@
 #pau .caja {
    background-color: #32d429;
    position: absolute;
+   z-index: 10000;
    margin: auto;
    border: 2px solid black;
    top: 50px;
@@ -164,6 +214,7 @@
    background-color: gold;
    position: absolute;
    margin: auto;
+   z-index: 10000;
    top: 0;
    bottom: 0;
    left: 0;
@@ -177,6 +228,7 @@
    background-color: gold;
    position: absolute;
    margin: auto;
+   z-index: 10000;
    top: 0;
    bottom: 0;
    left: 0;
@@ -190,7 +242,7 @@
 #pau .tortilla {
    border: 2px solid black;
    background-color: gold;
-   z-index: -100;
+   z-index: 99;
    position: absolute;
    margin: auto;
    top: 0;
