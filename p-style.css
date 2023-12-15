@@ -30,8 +30,10 @@
 
 #pau .cabesa {
    background-color: #FBC5A7  ;
+   border: black solid 2px;
    position: absolute;
    margin: auto;
+   z-index: 8;
    top: 0;
    bottom: 1;
    left: 0;
@@ -48,7 +50,7 @@
    bottom: 1;
    left: 0;
    right: 0;
-   width: 115px;
+   width: 111px;
    height: 45px;
    border-bottom-left-radius: 30%;
    border-bottom-right-radius: 30%;
@@ -76,7 +78,7 @@
    bottom: 0;
    left: 0;
    right: 0;
-   width: 20px;
+   width: 21px;
    height: 21px
 }
 
@@ -312,10 +314,41 @@
    animation-delay: 6s;
 }
 
+#pau .ojos {
+   background-color: white  ;
+   border: black solid 2px;
+   position: absolute;
+   margin: auto;
+   z-index: 10;
+   top: 10px;
+   bottom: 0;
+   left: 1;
+   right: 0;
+   width: 20px;
+   height: 21px;
+   animation-duration: 10s;
+   animation-delay: 4s;
+   animation-name: p-ojo;
+   animation-iteration-count: infinite;
+}
 
+#pau .pupila {
+   background-color: black  ;
+   position: absolute;
+   margin: auto;
+   z-index: 10;
+   top: 0;
+   bottom: 0;
+   left: 8px;
+   right: 0;
+   width: 5px;
+   height: 6px;
+   animation-duration: 10s;
+   animation-delay: 4s;
+   animation-name: p-pupila;
+   animation-iteration-count: infinite;
 
-
-
+}
 
 #pau .summon-nieve {
    border: 3px solid black;
@@ -579,6 +612,19 @@
 
 }
 
+@keyframes p-ojo {
+   0%  {left: 0;}
+   0.00000000000000000000000000000001%  {right: 92px;}
+   100% {left: 0;}
+   99.9999999999999999999999999999999%  {right: 92px;}
+}
+
+@keyframes p-pupila {
+   0%  {left: 0;}
+   0.00000000000000000000000000000001%  {right: 8px;}
+   100% {left: 0;}
+   99.9999999999999999999999999999999%  {right: 8px;}
+}
 
 @keyframes p-magia {
    0%{
